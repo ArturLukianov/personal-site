@@ -130,7 +130,7 @@ const email = 'a.lukianov@innopolis.university';
 const params = new URLSearchParams({ email: email });
 
 // Fetch the comic ID
-fetch(`https://fwd.innopolis.university/api/hw2?${params.toString()}`)
+fetch(`https://fwd.innopolis.university/api/hw2?email=${params.toString()}`)
     .then(response => response.json())
     .then(data => {
         const comicId = data.id;
