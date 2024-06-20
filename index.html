@@ -131,9 +131,9 @@ const params = new URLSearchParams({ email: email });
 
 // Fetch the comic ID
 fetch(`https://fwd.innopolis.university/api/hw2?email=${params.toString()}`)
-    .then(response => response.json())
+    .then(response => response.text())
     .then(data => {
-        const comicId = data.id;
+        const comicId = data;
         return fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
     })
     .then(response => response.json())
