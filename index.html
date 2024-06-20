@@ -143,14 +143,13 @@ fetch(`https://fwd.innopolis.university/api/hw2?email=${params.toString()}`)
         const date = new Date(year, month - 1, day).toLocaleDateString();
 
         // Create elements to display the comic
-        const comicDiv = document.createElement('div');
-        comicDiv.id = 'xkcd';
+        const comicDiv = document.getElementById('xkcd');
 
         const comicImg = document.createElement('img');
         comicImg.src = img;
         comicImg.alt = alt;
 
-        const comicTitle = document.createElement('h2');
+        const comicTitle = document.createElement('p');
         comicTitle.textContent = title;
 
         const comicDate = document.createElement('p');
