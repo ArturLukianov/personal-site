@@ -159,9 +159,6 @@ fetch(`https://fwd.innopolis.university/api/hw2?email=${params.toString()}`)
         comicDiv.appendChild(comicTitle);
         comicDiv.appendChild(comicImg);
         comicDiv.appendChild(comicDate);
-
-        // Append comicDiv to the body
-        document.body.appendChild(comicDiv);
     })
     .catch(error => console.error('Error:', error));
 
