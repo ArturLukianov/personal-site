@@ -54,7 +54,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Deploy GitHub Pages site
-        uses: actions/deploy-pages@v1
+        uses: actions/upload-pages-artifact@v1
           
       
     
